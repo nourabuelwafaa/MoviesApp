@@ -17,10 +17,7 @@ class MoviesUseCaseTest {
     @Test
     fun `useCase is returning movies`() {
         coEvery { mockRepository.getMovies() } returns Result.success(
-            listOf(
-                Movie(),
-                Movie()
-            )
+            mockMovies()
         )
 
         runBlocking {
@@ -30,4 +27,8 @@ class MoviesUseCaseTest {
         }
     }
 
+    private fun mockMovies() = listOf<Movie>(
+        mockk(),
+        mockk()
+    )
 }

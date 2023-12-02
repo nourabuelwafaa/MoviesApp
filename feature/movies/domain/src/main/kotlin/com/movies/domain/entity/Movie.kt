@@ -1,4 +1,8 @@
 package com.movies.domain.entity
 
-class Movie {
-}
+data class Movie(
+    val title: String,
+    val description: String,
+    val imageUrl: String,
+    val year: String,
+)
