@@ -1,11 +1,12 @@
 package com.movies.domain.usecase
 
 import com.movies.domain.entity.Movie
+import com.movies.domain.repository.MoviesRepository
 
-class MoviesUseCase {
+class MoviesUseCase(private val repository: MoviesRepository) {
 
-    fun invoke(): List<Movie> {
-        return emptyList()
+    suspend fun invoke(): List<Movie> {
+        return repository.getMovies()
     }
 
 }
