@@ -16,13 +16,16 @@ class MoviesUseCaseTest {
 
     @Test
     fun `useCase is returning movies`() {
-        coEvery { mockRepository.getMovies() } returns listOf(
-            Movie(),
-            Movie()
+        coEvery { mockRepository.getMovies() } returns Result.success(
+            listOf(
+                Movie(),
+                Movie()
+            )
         )
+
         runBlocking {
-            val movies = useCase.invoke()
-            assertEquals(2, movies.size)
+            val result = useCase.invoke()
+            result.onSuccess { assertEquals(2, it.size) }
             coVerify { mockRepository.getMovies() }
         }
     }
