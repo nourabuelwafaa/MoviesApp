@@ -1,4 +1,10 @@
 package com.movies.data.repository
 
-class MoviesRepositoryImpl {
+import com.movies.domain.entity.Movie
+import com.movies.domain.repository.MoviesRepository
+
+class MoviesRepositoryImpl : MoviesRepository {
+    override suspend fun getMovies(): Result<List<Movie>> {
+        return Result.success(emptyList())
+    }
 }
