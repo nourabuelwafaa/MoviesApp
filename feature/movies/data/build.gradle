@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+java {
+    sourceCompatibility = libs.versions.java.get()
+    targetCompatibility = libs.versions.java.get()
+}
+
+dependencies {
+    testImplementation libs.test.junit
+    testImplementation libs.test.mockk
+    testImplementation libs.test.kotlin.coroutines
+}
