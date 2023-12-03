@@ -4,8 +4,9 @@ import com.movies.data.mapper.DomainMapper
 import com.movies.data.remote.MoviesApi
 import com.movies.domain.entity.Movie
 import com.movies.domain.repository.MoviesRepository
+import javax.inject.Inject
 
-class MoviesRepositoryImpl(
+class MoviesRepositoryImpl @Inject constructor(
     private val api: MoviesApi,
     private val mapper: DomainMapper
 
