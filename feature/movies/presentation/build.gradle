@@ -29,6 +29,8 @@ dependencies {
     implementation libs.androidx.appcompat
     implementation libs.androidx.material
 
+    implementation libs.library.coil
+
     testImplementation libs.test.junit
     testImplementation libs.test.mockk
     testImplementation libs.test.robolectric

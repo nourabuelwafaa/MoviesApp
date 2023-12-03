@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.movies.feature.movies.presentation.databinding.SingleMovieViewBinding
 import com.movies.presentation.model.MoviesView
 import com.movies.feature.movies.presentation.R
@@ -38,6 +39,7 @@ class MoviesAdapter(
         val binding = (holder as MovieViewHolder).binding
         binding.titleTv.text = movie.title
         binding.dateTv.text = movie.date
+        binding.posterIv.load(movie.imageUrl)
         binding.root.setOnClickListener {
             onItemClicked(movie)
         }
