@@ -13,6 +13,7 @@ dependencies {
     implementation libs.di.javax.inject
     implementation libs.library.retrofit
     implementation libs.library.gson
+    implementation libs.di.hilt.core
 
     testImplementation libs.test.junit
     testImplementation libs.test.mockk

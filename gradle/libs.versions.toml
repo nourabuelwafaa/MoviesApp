@@ -28,6 +28,7 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "v
 androidx-material = { module = "com.google.android.material:material", version.ref = "version-androidx-material" }
 di-javax-inject = { module = "javax.inject:javax.inject", version.ref = "version-di-javax-inject" }
 di-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "version-di-hilt" }
+di-hilt-core = { module = "com.google.dagger:hilt-core", version.ref = "version-di-hilt" }
 di-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "version-di-hilt" }
 
 test-junit = { module = "junit:junit", version.ref = "version-test-junit" }
