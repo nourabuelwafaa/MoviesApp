@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'kotlin-kapt'
+}
+
+java {
+    sourceCompatibility = libs.versions.java.get()
+    targetCompatibility = libs.versions.java.get()
+}
+
+dependencies {
+    api libs.library.retrofit
+    implementation libs.library.gson
+    implementation libs.di.hilt.core
+    implementation libs.library.logging.interceptor
+    implementation libs.library.converter.gson
+    kapt libs.di.hilt.compiler
+}
+
+kapt {
+    correctErrorTypes true
+}

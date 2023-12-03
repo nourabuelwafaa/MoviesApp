@@ -8,6 +8,8 @@ version-kotlin-coroutines = "1.6.4"
 version-library-retrofit = "2.9.0"
 version-library-gson = "2.9.1"
 version-library-coil = "2.4.0"
+version-library-logging-interceptor = "4.9.3"
+version-di-hilt = "2.44"
 
 version-plugin-agp = "7.4.1"
 
@@ -25,6 +27,8 @@ library-coil = { module = "io.coil-kt:coil", version.ref = "version-library-coil
 androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "version-androidx-lifecycle" }
 androidx-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "version-androidx-lifecycle" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "version-androidx-appcompat" }
+library-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "version-library-retrofit" }
+library-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "version-library-logging-interceptor" }
 androidx-material = { module = "com.google.android.material:material", version.ref = "version-androidx-material" }
 di-javax-inject = { module = "javax.inject:javax.inject", version.ref = "version-di-javax-inject" }
 di-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "version-di-hilt" }
