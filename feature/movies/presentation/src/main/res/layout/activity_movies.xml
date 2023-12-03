@@ -5,6 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        style="@style/DS.TextAppearance.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_s"
+        android:text="Trending Movies"
+        android:textColor="@color/black" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/moviesRv"
         android:layout_width="match_parent"
