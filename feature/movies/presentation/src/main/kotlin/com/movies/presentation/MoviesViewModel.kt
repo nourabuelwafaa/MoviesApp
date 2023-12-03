@@ -6,9 +6,12 @@ import androidx.lifecycle.viewModelScope
 import com.movies.domain.usecase.MoviesUseCase
 import com.movies.presentation.mapper.MoviesViewMapper
 import com.movies.presentation.model.MoviesView
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MoviesViewModel(
+@HiltViewModel
+class MoviesViewModel @Inject constructor(
     private val useCase: MoviesUseCase,
     private val mapper: MoviesViewMapper
 ) : ViewModel() {

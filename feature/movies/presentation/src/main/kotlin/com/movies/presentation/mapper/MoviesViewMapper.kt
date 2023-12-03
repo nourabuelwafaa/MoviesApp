@@ -2,12 +2,13 @@ package com.movies.presentation.mapper
 
 import com.movies.domain.entity.Movie
 import com.movies.presentation.model.MoviesView
+import javax.inject.Inject
 
 interface MoviesViewMapper {
     fun map(items: List<Movie>): List<MoviesView>
 }
 
-class MoviesViewMapperImpl : MoviesViewMapper {
+class MoviesViewMapperImpl @Inject constructor() : MoviesViewMapper {
     override fun map(items: List<Movie>): List<MoviesView> {
         return items.map {
             MoviesView(
