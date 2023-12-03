@@ -12,6 +12,7 @@ version-plugin-agp = "7.4.1"
 
 version-test-junit = "4.13.2"
 version-test-mockk = "1.13.5"
+version-test-robolectric = "4.9"
 
 [libraries]
 library-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "version-library-retrofit" }
@@ -23,6 +24,7 @@ androidx-material = { module = "com.google.android.material:material", version.r
 test-junit = { module = "junit:junit", version.ref = "version-test-junit" }
 test-mockk = { module = "io.mockk:mockk", version.ref = "version-test-mockk" }
 test-kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "version-kotlin-coroutines" }
+test-robolectric = { module = "org.robolectric:robolectric", version.ref = "version-test-robolectric" }
 
 [plugins]
 androidApp = { id = "com.android.application", version.ref = "version-plugin-agp" }

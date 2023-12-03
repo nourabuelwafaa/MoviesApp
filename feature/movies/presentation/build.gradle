@@ -13,6 +13,11 @@ android {
     buildFeatures {
         viewBinding true
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -26,5 +31,6 @@ dependencies {
 
     testImplementation libs.test.junit
     testImplementation libs.test.mockk
+    testImplementation libs.test.robolectric
     testImplementation libs.test.kotlin.coroutines
 }
