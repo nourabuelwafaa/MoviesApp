@@ -16,6 +16,7 @@ dependencies {
     implementation libs.androidx.lifecycle
     implementation libs.androidx.viewmodel.ktx
     implementation libs.androidx.appcompat
+    implementation libs.androidx.material
 
     testImplementation libs.test.junit
     testImplementation libs.test.mockk
