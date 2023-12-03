@@ -17,6 +17,7 @@ android {
 
 dependencies {
     implementation project(':core:design-system')
+    implementation project(':core:localization')
 
     implementation libs.androidx.lifecycle
     implementation libs.androidx.viewmodel.ktx
