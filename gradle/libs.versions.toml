@@ -11,6 +11,8 @@ version-library-coil = "2.4.0"
 
 version-plugin-agp = "7.4.1"
 
+version-di-javax-inject = "1"
+
 version-test-junit = "4.13.2"
 version-test-mockk = "1.13.5"
 version-test-robolectric = "4.9"
@@ -24,6 +26,8 @@ androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", vers
 androidx-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "version-androidx-lifecycle" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "version-androidx-appcompat" }
 androidx-material = { module = "com.google.android.material:material", version.ref = "version-androidx-material" }
+di-javax-inject = { module = "javax.inject:javax.inject", version.ref = "version-di-javax-inject" }
+
 test-junit = { module = "junit:junit", version.ref = "version-test-junit" }
 test-mockk = { module = "io.mockk:mockk", version.ref = "version-test-mockk" }
 test-kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "version-kotlin-coroutines" }
