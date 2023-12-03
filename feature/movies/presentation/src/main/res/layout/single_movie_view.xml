@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="@dimen/margin_m"
     android:orientation="horizontal">
 
     <ImageView
@@ -15,21 +15,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/margin_m"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/titleTv"
+            style="@style/DS.TextAppearance.Headline4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
             tools:text="Harry Potter" />
 
         <TextView
             android:id="@+id/dateTv"
+            style="@style/DS.TextAppearance.Subtitle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             tools:text="2000" />
     </LinearLayout>
 

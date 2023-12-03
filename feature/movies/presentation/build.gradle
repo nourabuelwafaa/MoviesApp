@@ -13,6 +13,8 @@ android {
 }
 
 dependencies {
+    implementation project(':core:design-system')
+
     implementation libs.androidx.lifecycle
     implementation libs.androidx.viewmodel.ktx
     implementation libs.androidx.appcompat
