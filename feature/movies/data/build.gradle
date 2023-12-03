@@ -10,6 +10,8 @@ java {
 
 dependencies {
     implementation project(':feature:movies:domain')
+    implementation libs.library.retrofit
+
     testImplementation libs.test.junit
     testImplementation libs.test.mockk
     testImplementation libs.test.kotlin.coroutines
