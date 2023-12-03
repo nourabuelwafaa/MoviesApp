@@ -1,6 +1,8 @@
 package com.movies.data.repository
 
+import com.movies.data.dto.MovieDto
 import com.movies.data.dto.MoviesResponse
+import com.movies.data.mapper.DomainMapperImpl
 import com.movies.data.remote.MoviesApi
 import io.mockk.coEvery
 import io.mockk.mockk
@@ -12,16 +14,19 @@ import retrofit2.Response
 
 class MoviesRepositoryImplTest {
     private val mockApi = mockk<MoviesApi>()
-    private val repository = MoviesRepositoryImpl(mockApi)
+    private val mapper = DomainMapperImpl()
+
+    private val repository = MoviesRepositoryImpl(mockApi, mapper)
 
 
     @Test
     fun `repository is returning items`() {
+        val dtoItems = listOf(getMovieDto())
         coEvery { mockApi.movies() } returns
-                Response.success(MoviesResponse(emptyList()))
+                Response.success(MoviesResponse(dtoItems))
         runBlocking {
             val result = repository.getMovies()
-            Assert.assertEquals(0, result.getOrNull()!!.size)
+            Assert.assertEquals(1, result.getOrNull()!!.size)
         }
     }
 
@@ -47,5 +52,12 @@ class MoviesRepositoryImplTest {
             Assert.assertEquals(result.isFailure, true)
         }
     }
+
+    private fun getMovieDto() = MovieDto(
+        title = "title",
+        posterUrl = "title",
+        releaseDate = "title",
+        overview = "title",
+    )
 
 }

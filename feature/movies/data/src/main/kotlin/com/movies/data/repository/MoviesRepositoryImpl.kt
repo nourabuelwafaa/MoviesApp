@@ -1,17 +1,21 @@
 package com.movies.data.repository
 
+import com.movies.data.mapper.DomainMapper
 import com.movies.data.remote.MoviesApi
 import com.movies.domain.entity.Movie
 import com.movies.domain.repository.MoviesRepository
 
 class MoviesRepositoryImpl(
-    private val api: MoviesApi
+    private val api: MoviesApi,
+    private val mapper: DomainMapper
+
 ) : MoviesRepository {
     override suspend fun getMovies(): Result<List<Movie>> {
         return try {
             val response = api.movies()
-            if (response.isSuccessful && response.body() != null) {
-                Result.success(emptyList())
+            val moviesResponse = response.body()
+            if (response.isSuccessful && moviesResponse != null) {
+                Result.success(mapper.map(moviesResponse.items))
             } else {
                 Result.failure(Exception(response.message()))
             }
