@@ -3,6 +3,7 @@ java = "1.8.0"
 
 version-kotlin-coroutines = "1.6.4"
 version-library-retrofit = "2.9.0"
+version-library-gson = "2.9.1"
 
 version-plugin-agp = "7.4.1"
 
@@ -11,6 +12,7 @@ version-test-mockk = "1.13.5"
 
 [libraries]
 library-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "version-library-retrofit" }
+library-gson = { module = "com.google.code.gson:gson", version.ref = "version-library-gson" }
 
 test-junit = { module = "junit:junit", version.ref = "version-test-junit" }
 test-mockk = { module = "io.mockk:mockk", version.ref = "version-test-mockk" }
