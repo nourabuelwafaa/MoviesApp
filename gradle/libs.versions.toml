@@ -1,6 +1,8 @@
 [versions]
 java = "1.8.0"
 
+version-androidx-lifecycle = "2.6.1"
+version-androidx-appcompat = "1.6.1"
 version-kotlin-coroutines = "1.6.4"
 version-library-retrofit = "2.9.0"
 version-library-gson = "2.9.1"
@@ -13,7 +15,9 @@ version-test-mockk = "1.13.5"
 [libraries]
 library-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "version-library-retrofit" }
 library-gson = { module = "com.google.code.gson:gson", version.ref = "version-library-gson" }
-
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "version-androidx-lifecycle" }
+androidx-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "version-androidx-lifecycle" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "version-androidx-appcompat" }
 test-junit = { module = "junit:junit", version.ref = "version-test-junit" }
 test-mockk = { module = "io.mockk:mockk", version.ref = "version-test-mockk" }
 test-kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "version-kotlin-coroutines" }

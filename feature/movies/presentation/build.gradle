@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.movies.feature.movies.presentation'
+    compileSdk 33
+    defaultConfig {
+        minSdk 21
+        targetSdk 33
+    }
+}
+
+dependencies {
+    implementation libs.androidx.lifecycle
+    implementation libs.androidx.viewmodel.ktx
+    implementation libs.androidx.appcompat
+
+    testImplementation libs.test.junit
+    testImplementation libs.test.mockk
+    testImplementation libs.test.kotlin.coroutines
+}
