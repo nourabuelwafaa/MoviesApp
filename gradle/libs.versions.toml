@@ -27,6 +27,8 @@ androidx-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx"
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "version-androidx-appcompat" }
 androidx-material = { module = "com.google.android.material:material", version.ref = "version-androidx-material" }
 di-javax-inject = { module = "javax.inject:javax.inject", version.ref = "version-di-javax-inject" }
+di-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "version-di-hilt" }
+di-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "version-di-hilt" }
 
 test-junit = { module = "junit:junit", version.ref = "version-test-junit" }
 test-mockk = { module = "io.mockk:mockk", version.ref = "version-test-mockk" }
@@ -39,3 +41,4 @@ androidApp = { id = "com.android.application", version.ref = "version-plugin-agp
 androidLibrary = { id = "com.android.library", version.ref = "version-plugin-agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "java" }
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "java" }
+hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "version-di-hilt" }
