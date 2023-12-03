@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DS.TextAppearance.Headline1" parent="TextAppearance.MaterialComponents.Headline1" />
+
+    <style name="DS.TextAppearance.Headline2" parent="TextAppearance.MaterialComponents.Headline2" />
+
+    <style name="DS.TextAppearance.Headline3" parent="TextAppearance.MaterialComponents.Headline3" />
+
+    <style name="DS.TextAppearance.Headline4" parent="TextAppearance.MaterialComponents.Headline4" />
+
+    <style name="DS.TextAppearance.Headline5" parent="TextAppearance.MaterialComponents.Headline5" />
+
+    <style name="DS.TextAppearance.Headline6" parent="TextAppearance.MaterialComponents.Headline6" />
+
+    <style name="DS.TextAppearance.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1" />
+
+    <style name="DS.TextAppearance.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2" />
+
+    <style name="DS.TextAppearance.Body1" parent="TextAppearance.MaterialComponents.Body1" />
+
+    <style name="DS.TextAppearance.Body2" parent="TextAppearance.MaterialComponents.Body2" />
+
+    <style name="DS.TextAppearance.Caption" parent="TextAppearance.MaterialComponents.Caption" />
+
+    <style name="DS.TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button" />
+
+</resources>
