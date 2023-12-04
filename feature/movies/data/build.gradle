@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'org.jetbrains.kotlin.jvm'
+    id 'kotlin-kapt'
 }
 
 java {
@@ -10,12 +11,19 @@ java {
 
 dependencies {
     implementation project(':feature:movies:domain')
+    implementation project(':core:netowrking')
+
     implementation libs.di.javax.inject
     implementation libs.library.retrofit
     implementation libs.library.gson
     implementation libs.di.hilt.core
+    kapt libs.di.hilt.compiler
 
     testImplementation libs.test.junit
     testImplementation libs.test.mockk
     testImplementation libs.test.kotlin.coroutines
+}
+
+kapt {
+    correctErrorTypes true
 }
