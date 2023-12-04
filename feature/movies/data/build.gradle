@@ -11,7 +11,7 @@ java {
 
 dependencies {
     implementation project(':feature:movies:domain')
-    implementation project(':core:netowrking')
+    implementation project(':core:networking')
 
     implementation libs.di.javax.inject
     implementation libs.library.retrofit
