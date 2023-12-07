@@ -2,7 +2,7 @@ package com.movies.data.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class MoviesResponse(val items: List<MovieDto>)
+data class MoviesResponse(@SerializedName("results") val items: List<MovieDto>)
 
 data class MovieDto(
     val title: String,

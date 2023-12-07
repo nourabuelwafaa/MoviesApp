@@ -14,8 +14,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkClientModule {
-    private const val BASE_URL = "https://developers.themoviedb.org/"
-
+    private const val BASE_URL = "https://api.themoviedb.org/"
     @Provides
     @Singleton
     fun okHttpCallFactory(): Call.Factory = OkHttpClient.Builder()
