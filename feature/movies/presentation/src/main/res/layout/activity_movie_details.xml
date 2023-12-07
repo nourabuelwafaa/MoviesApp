@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/posterIv"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:transitionName="posterTransitionName"
+        tools:background="#BABABA" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        style="@style/DS.TextAppearance.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_m"
+        android:layout_marginEnd="@dimen/margin_m"
+        tools:text="Harry Potter" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        style="@style/DS.TextAppearance.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_m"
+        tools:text="2000" />
+
+    <TextView
+        android:id="@+id/descTv"
+        style="@style/DS.TextAppearance.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_xs"
+        android:layout_marginEnd="@dimen/margin_m"
+        tools:text="Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, inter" />
+
+</LinearLayout>
