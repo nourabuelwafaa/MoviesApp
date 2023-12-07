@@ -22,6 +22,7 @@ class MovieDetailsActivity :
         movie?.let {
             binding.dateTv.text = it.date
             binding.titleTv.text = it.title
+            binding.descTv.text = it.description
             binding.posterIv.load(it.imageUrl)
         }
     }
