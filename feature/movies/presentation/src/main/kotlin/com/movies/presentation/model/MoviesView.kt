@@ -7,8 +7,10 @@ data class MoviesView(
     val title: String,
     val date: String,
     val imageUrl: String,
+    val description: String
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
+        parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: ""
@@ -18,6 +20,7 @@ data class MoviesView(
         parcel.writeString(title)
         parcel.writeString(date)
         parcel.writeString(imageUrl)
+        parcel.writeString(description)
     }
 
     override fun describeContents(): Int {
