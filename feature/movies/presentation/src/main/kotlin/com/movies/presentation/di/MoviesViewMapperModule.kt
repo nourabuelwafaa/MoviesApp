@@ -1,3 +1,5 @@
+package com.movies.presentation.di
+
 import com.movies.presentation.mapper.MoviesViewMapper
 import com.movies.presentation.mapper.MoviesViewMapperImpl
 import dagger.Binds
