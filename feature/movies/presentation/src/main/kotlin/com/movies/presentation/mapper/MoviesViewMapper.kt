@@ -13,9 +13,17 @@ class MoviesViewMapperImpl @Inject constructor() : MoviesViewMapper {
         return items.map {
             MoviesView(
                 title = it.title,
-                date = it.year,
-                imageUrl = it.imageUrl
+                date = extractYear(it.year),
+                imageUrl = "https://image.tmdb.org/t/p/w500/${it.imageUrl}"
             )
+        }
+    }
+
+    private fun extractYear(releaseDate: String): String {
+        return try {
+            releaseDate.split("-").first()
+        } catch (e: Exception) {
+            releaseDate
         }
     }
 }
