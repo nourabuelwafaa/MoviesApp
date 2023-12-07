@@ -26,6 +26,7 @@ class MoviesAdapterTest {
             title = "title",
             date = "1930",
             imageUrl = "https://example.com",
+            description = "description",
         ),
     )
     private val adapter = MoviesAdapter(items) {}

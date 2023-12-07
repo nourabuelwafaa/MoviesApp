@@ -14,7 +14,8 @@ class MoviesViewMapperImpl @Inject constructor() : MoviesViewMapper {
             MoviesView(
                 title = it.title,
                 date = extractYear(it.year),
-                imageUrl = "https://image.tmdb.org/t/p/w500/${it.imageUrl}"
+                imageUrl = "https://image.tmdb.org/t/p/w500/${it.imageUrl}",
+                description = it.description
             )
         }
     }
