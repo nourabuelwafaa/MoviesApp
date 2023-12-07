@@ -14,7 +14,7 @@
         <activity
             android:name=".presentation.MoviesActivity"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.movies.featur.movies.presentation.MoviesActivity" />
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
         <activity
             android:name=".presentation.MovieDetailsActivity"
             android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+            android:theme="@style/Theme.Main" />
 
     </application>
 

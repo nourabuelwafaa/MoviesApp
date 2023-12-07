@@ -14,6 +14,7 @@
         tools:background="#BABABA" />
 
     <TextView
+        android:layout_marginTop="@dimen/margin_m"
         android:id="@+id/titleTv"
         style="@style/DS.TextAppearance.Headline4"
         android:layout_width="wrap_content"
